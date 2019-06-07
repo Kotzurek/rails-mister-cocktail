@@ -1,2 +1,9 @@
-<h1>Create Your New Cocktail:</h1>
-<%=  render 'form', cocktail: @cocktail %>
+<div class="container">
+<h1>Create a New Cocktail:</h1>
+<%= simple_form_for (@cocktail) do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Create", class: "btn btn-primary"%>
+<% end %>
+</div>
+<br><br>
+

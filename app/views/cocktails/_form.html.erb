@@ -1,9 +1,0 @@
-<div class="container">
-<%= form_for(@cocktail) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.submit "Save", class: "btn btn-primary"%>
-<% end %>
-</div>
-<br><br>
-<%= link_to "Back to Start", cocktails_path, class: "btn btn-primary" %>
